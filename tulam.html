@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<from>
+    <input type="text" id="money">
+    <select id="from">
+        <option value="vnd">vnd</option>
+        <option value="usd">usd</option>
+    </select>
+    <select id="to">
+        <option value="vnd">vnd</option>
+        <option value="usd">usd</option>
+    </select>
+    <input type="text" id="money1">
+    <button onclick="convert()">convert</button>
+</from>
+<script>
+    function convert() {
+    if (from.value=="usd" && to.value=="vnd"){money1.value=parseFloat(money.value)*23000}
+    if (from.value==to.value){money1.value=parseFloat(money.value)}
+    if (from.value=="vnd"&& to.value=="usd"){money1.value=parseFloat(money.value)/23000}
+        }
+</script>
+</body>
+</html>
